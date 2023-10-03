@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .azul{background-color: blue; color: white;}
+        .verde{background-color: green; color: white;}
+        .tijolo{background-color: tomato; color: white;} 
+        button{
+            margin: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Responsabilidade de elementos</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 azul">coluna 1</div>
+            <div class="col-lg-4 col-md-6 col-sm-12 verde">coluna 2</div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tijolo">coluna 3</div>
+        </div>
+    </div>
+
+    <h2>menu responsivo</h2>
+    <div id="menu" class="container">
+        <nav>
+            <ul class="row">
+                <li class="col-lg-2 col-md-3 col-sm-12">HOME</li>
+                <li class="col-lg-2 col-md-3 col-sm-12">EMPRESA</li>
+                <li class="col-lg-4 col-md-6 col-sm-12">SOBRE NOS</li>
+                <li class="col-lg-2 col-md-6 col-sm-12">PRODUTOS</li>
+                <li class="col-lg-2 col-md-6 col-sm-12">CONTATOS</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <h2>formulario de registro</h2>
+    <div id="form_registro" class="container">
+        <form>
+            <!--nome-->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 ">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="nome" class="form-control" id="nome" placeholder="insira o seu nome:">
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <label for="apelido" class="form-label">Apelido</label>
+                    <input type="apelido" class="form-control" id="apelido" placeholder="insira o seu apelido:">
+                </div>
+            </div>
+            <!--morada-->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 ">
+                    <label for="morada1" class="form-label">morada1</label>
+                    <input type="morada1" class="form-control" id="morada1" placeholder="rua da escola nº27:">
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <label for="morada2" class="form-label">morada2</label>
+                    <input type="morada2" class="form-control" id="morada2" placeholder="apartado 202, men martins,sintra:">
+                </div>
+            </div>
+            <!--LOCALIDADE-->  
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <label for="localidade" class="form-label">localidade</label>
+                    <input type="localidade" class="form-control" id="localidade" placeholder="indica a sua localidade">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="distrito" class="form-label">distrito</label>
+                    <input type="distrito" class="form-control" id="distrito" placeholder="indica o seu distrito">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="cod_postal" class="form-label">cod_postal</label>
+                    <input type="cod_postal" class="form-control" id="cod_postal" placeholder="indica os seu codigo postal">
+                </div>
+            </div>
+            <!--email-->
+            <div class="row">
+                <div class="col">
+                    <label for="email" class="form-label">email</label>
+                    <input type="email" class="form-control" id="email" placeholder="insira um email valido">
+                </div>
+            </div>
+            <!--password-->
+            <div class="row">
+                <div class="col">
+                    <label for="password" class="form-label">password</label>
+                    <input type="password" class="form-control" id="password" placeholder="insira um password valido">
+                </div>
+                <div class="col">
+                    <label for="repassword" class="form-label">reescreva password</label>
+                    <input type="password" class="form-control" id="repassword" placeholder="insira denovo a mesma password">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-danger">limpar formulario</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
